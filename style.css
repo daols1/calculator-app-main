@@ -56,18 +56,39 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-right: 5px;
 }
 
 #up_numbs{
     font-size: 10px;
     color: var(--white);
-    letter-spacing: 4px;
+    letter-spacing: 3px;
+}
+
+.selector{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
 }
 
 #selector_itself{
-    content: 'somthing';
-    background-color: var(--verydarkdesaturatedbluescreen);
-    /* Would come back to this */
+    height: 15px;
+    width: 100%;
+    margin: 5px 0px;
+    background-color: var(--keypadbg);
+    border-radius: 10px;
+}
+
+#selector_itself_inner{
+    height: 10px;
+    background-color: hsl(6, 63%, 50%);
+    width: 100%;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+#hidden{
+    color: transparent;
 }
 
 .display{
