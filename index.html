@@ -11,7 +11,7 @@
   <title>Frontend Mentor | Calculator app</title>
 </head>
 <body>
-  <div class="calc_container">
+  <div class="calc_container light-theme dark-theme">
     <div class="clac_container_inner">
       <header class="head">
         <p id="calc">calc</p>
@@ -23,33 +23,34 @@
       </header>
       <section class="display">
         <div class="dislay_inner">
-          <span class="disp_numbers"> 399,981</span>
+          <div class="disp_numbers">0</div>
         </div>
       </section>
       <section class="numbers">
         <div class="numbs">
-          <div id="seven" class="items">7</div>
-          <div id="eight" class="items">8</div>
-          <div id="nine" class="items">9</div>
-          <div id="del">del</div>
-          <div id="four" class="items">4</div>
-          <div id="five" class="items">5</div>
-          <div id="six" class="items">6</div>
-          <div id="plus" class="items">+</div>
-          <div id="one" class="items">1</div>
-          <div id="two" class="items">2</div>
-          <div id="three" class="items">3</div>
-          <div id="minus" class="items">-</div>
-          <div id="point" class="items">.</div>
-          <div id="zeron" class="items">0</div>
-          <div id="divide" class="items">/</div>
-          <div id="multiplyn" class="items">* </div>
-          <div id="reset">reset</div>
-          <div id="equal">=</div>
+          <button id="seven" class="items num" value= 7>7</button>
+          <button id="eight" class="items num" value= 8>8</button>
+          <button id="nine" class="items num" value= 9>9</button>
+          <button id="del" class="items del" value= del>del</button>
+          <button id="four" class="items num" value= 4>4</button>
+          <button id="five" class="items num" value= 5>5</button>
+          <button id="six" class="items num" value= 6>6</button>
+          <button id="plus" class="items operate" value= +>+</button>
+          <button id="one" class="items num" value= 1>1</button>
+          <button id="two" class="items num" value= 2>2</button>
+          <button id="three" class="items num" value= 3>3</button>
+          <button id="minus" class="items operate" value= ->-</button>
+          <button id="point" class="items operate" value= .>.</button>
+          <button id="zeron" class="items num" value= 0>0</button>
+          <button id="divde" class="items operate" value= / >/</button>
+          <button id="multiplyn" class="items operate" value= *>* </button>
+          <button id="reset" class="items reset" value= 'reset'>reset</button>
+          <button id="equal" class="items equal" value= 'equal'>=</button>
         </div>
       </section>
     </div>
   </div>
+  <script src="main.js"></script>
 </body>
 </html>
 

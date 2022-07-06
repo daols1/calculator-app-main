@@ -11,10 +11,25 @@
     --verydarkdesaturatedbluescreen: hsl(224, 36%, 15%);
     --keypadbg: hsl(223, 31%, 20%);
     --keybackground: hsl(0, 0%, 85%);
+    --lightgraymain: hsl(0, 0%, 90%);
 }
 
 body{
     background-color: var(--verydarkdesaturatedblue);
+    overflow: hidden;
+    /* background-color: var(--lightgraymain); */
+    
+}
+
+button{
+    border: none;
+}
+
+input{
+    border: none;
+    background: none;
+    text-align: right;
+    max-width: 270px;
 }
 
 /* Head */
@@ -80,7 +95,7 @@ body{
 }
 
 #selector_itself_inner{
-    height: 10px;
+    height: 8px;
     background-color: hsl(6, 63%, 50%);
     width: 100%;
     z-index: 1;
@@ -89,6 +104,7 @@ body{
 
 #hidden{
     color: transparent;
+    font-size: 15px;
 }
 
 .display{
@@ -205,6 +221,19 @@ body{
     box-shadow: 0 3px hsl(6, 67%, 19%);
     transform: translateY(4px);
 }
+
+.light-theme{
+    /* background-color: var(--lightgraymain); */
+}
+
+
+
+
+
+
+
+
+
 
 
 
