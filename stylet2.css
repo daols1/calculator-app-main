@@ -1,4 +1,5 @@
 /* Global */
+
 @keyframes entrance {
     0%{transform: scale(0);}
     25%{transform: scale(1.5);}
@@ -7,18 +8,17 @@
     100%{transform: scale(1);}
 }
 
-
 *{
     box-sizing: border-box;
     font-family: 'League Spartan', sans-serif !important;
 }
 
 :root{
-    --verydarkdesaturatedblue: hsl(222, 26%, 31%);
-    --white: #fff;
-    --verydarkdesaturatedbluescreen: hsl(224, 36%, 15%);
-    --keypadbg: hsl(223, 31%, 20%);
-    --keybackground: hsl(0, 0%, 85%);
+    --verydarkdesaturatedblue: hsl(0, 0%, 90%);
+    --white: #000;
+    --verydarkdesaturatedbluescreen: hsl(0, 0%, 93%);
+    --keypadbg: hsl(0, 5%, 81%);
+    --keybackground: hsl(45, 7%, 89%);
     --lightgraymain: hsl(0, 0%, 90%);
 }
 
@@ -109,6 +109,7 @@ input{
 
 #selector_itself_inner{
     height: 8px;
+    margin-left: 13px;
     background-color: hsl(6, 63%, 50%);
     width: 100%;
     z-index: 1;
@@ -164,11 +165,11 @@ input{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--verydarkdesaturatedbluescreen);
+    color: rgb(66, 66, 66);
     font-size: 20px;
     font-weight: 700;
     transition: all ease-in-out;
-    box-shadow: 0 5px #999;
+    box-shadow: 0 5px hsl(0, 0%, 62%);
 }
 
 .items:hover, #del:hover{
@@ -184,7 +185,7 @@ input{
 #reset{
     padding: 3px 3px;
     height: 40px;
-    background-color: rgb(65, 119, 150);
+    background-color: hsl(185, 42%, 37%);
     color: #fff !important;
     text-transform: uppercase;
     border-radius: 5px;
@@ -234,8 +235,6 @@ input{
     box-shadow: 0 3px hsl(6, 67%, 19%);
     transform: translateY(4px);
 }
-
-
 
 
 

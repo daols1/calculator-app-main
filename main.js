@@ -1,3 +1,26 @@
+// Theme changers 
+
+const t1 = document.querySelector('#t1');
+const t2 = document.querySelector('#t2');
+const t3 = document.querySelector('#t3');
+
+t1.addEventListener('click', () => {
+    document.querySelector('.styles').href = 'style.css';
+})
+
+t2.addEventListener('click', () => {
+    document.querySelector('.styles').href = 'stylet2.css';
+})
+
+t3.addEventListener('click', () => {
+    document.querySelector('.styles').href = 'stylet3.css';
+})
+
+
+
+
+
+
 // // DOM Selections;
 // // const one = document.querySelector('#one');
 // // const two = document.querySelector('#two');
@@ -37,50 +60,74 @@
 
 // DOM Selections
 
-class Calculator{
-    constructor(curentOperandTextElement){
-        this.curentOperandTextElement = curentOperandTextElement
-        this.clear()
-    }
+// class Calculator{
+//     constructor(curentOperandTextElement){
+//         this.curentOperandTextElement = curentOperandTextElement
+//         this.clear()
+//     }
 
-    clear(){
-        this.currentOperand = '';
-        this.operation = undefined
-    }
+//     clear(){
+//         this.currentOperand = '';
+//         this.operation = undefined
+//     }
 
-    delete(){
+//     delete(){
 
-    }
+//     }
 
-    appendNumber(number){
-        this.currentOperandTextElement = this.currentOperand.toString() + number.toString()
-    }
+//     appendNumber(number){
+//         this.currentOperandTextElement = this.currentOperand.toString() + number.toString()
+//     }
 
-    chooseOpertaion(operation){
+//     chooseOpertaion(operation){
 
-    }
+//     }
 
-    compute(){
+//     compute(){
 
-    }
+//     }
 
-    updateDisplay(){
-        this.curentOperandTextElement.innerText = this.curentOperand
-    }
-}
+//     updateDisplay(){
+//         this.curentOperandTextElement.innerText = this.curentOperand
+//     }
+// }
 
+// const calculator = new Calculator(curentOperandTextElement)
+
+// numBtns.forEach(e => {
+//     e.addEventListener('click', () => {
+//         console.log(calculator.appendNumber(e.innerText));
+//         calculator.updateDisplay();
+//     })
+// })
+
+const one = document.querySelector('#one');
 const numBtns = document.querySelectorAll('.num');
 const operators = document.querySelectorAll('.operate');
 const del = document.querySelector('.del');
 const reset = document.querySelector('.reset');
 const equal = document.querySelector('.equal');
-const curentOperandTextElement = document.querySelector('.disp_numbers')
-const calculator = new Calculator(curentOperandTextElement)
+const display = document.querySelector('.disp_numbers');
 
-numBtns.forEach(e => {
-    e.addEventListener('click', () => {
-        console.log(calculator.appendNumber(e.innerText));
-        calculator.updateDisplay();
-    })
+const choice = numBtns.forEach(e => {
+    e = e.innerHTML
+    console.log(e)
+});
+
+console.log(choice)
+
+one.addEventListener('click', () => {
+    display.innerHTML += one.textContent
 })
+//     })
+// });
+
+
+
+
+
+
+
+
+
 
