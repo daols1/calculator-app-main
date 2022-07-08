@@ -1,20 +1,20 @@
-// // Theme changers 
+// Theme changers 
 
-// const t1 = document.querySelector('#t1');
-// const t2 = document.querySelector('#t2');
-// const t3 = document.querySelector('#t3');
+const t1 = document.querySelector('#t1');
+const t2 = document.querySelector('#t2');
+const t3 = document.querySelector('#t3');
 
-// t1.addEventListener('click', () => {
-//     document.querySelector('.styles').href = 'style.css';
-// })
+t1.addEventListener('click', () => {
+    document.querySelector('.styles').href = 'style.css';
+})
 
-// t2.addEventListener('click', () => {
-//     document.querySelector('.styles').href = 'stylet2.css';
-// })
+t2.addEventListener('click', () => {
+    document.querySelector('.styles').href = 'stylet2.css';
+})
 
-// t3.addEventListener('click', () => {
-//     document.querySelector('.styles').href = 'stylet3.css';
-// })
+t3.addEventListener('click', () => {
+    document.querySelector('.styles').href = 'stylet3.css';
+})
 
 
 // // // DOM Selections;
